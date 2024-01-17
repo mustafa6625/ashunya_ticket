@@ -1,0 +1,255 @@
+/* Table Css start */
+.tBody {
+  display: block;
+  overflow: auto;
+}
+.tHead,
+.tRow {
+  display: table;
+  width: 100%;
+  table-layout: fixed; /* even columns width , fix width of table too*/
+  overflow: auto;
+}
+.tHead {
+  width: calc(
+    100% - 1em
+  ); /* scrollbar is average 1em/16px width, remove it from thead width */
+}
+.table {
+  width: 100%;
+}
+
+.table td,
+.table th {
+  /* border: 1px solid #ddd; */
+  border-bottom: 1px solid #efefef;
+  padding: 16px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  /* font-family: "Inter"; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  color: #7f8da2;
+  height: 30px;
+}
+
+.table thead {
+  background: #fbfbfb;
+  border-bottom: 1px solid #efefef;
+}
+.table td {
+  /* white-space: nowrap; */
+  /* width: 50px; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+}
+
+.marginAuto {
+  margin: auto;
+}
+
+.paddingAndHeight {
+  padding: 18px 22px;
+}
+
+.h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #393f46;
+}
+
+.icon {
+  width: 16.93px;
+  height: 16.93px;
+  color: #95a0b1;
+}
+
+.tableBackground {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.tableBottom {
+  padding: 16px 12px;
+  height: 56px;
+  font-size: 13px;
+}
+/* Table Css end */
+
+/* Pagiantion Start */
+.buttonViewAll {
+  display: inline-block;
+  color: #438ffe;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  margin-bottom: 6px;
+}
+.pagination {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.muted {
+  pointer-events: none;
+}
+
+.pagination li,
+.pagination span,
+.pagination a {
+  display: block;
+  border-radius: 100% !important;
+}
+
+/* Pagiantion End */
+/* Search bar */
+.inputIcon {
+  background-color: #fff;
+  border: none;
+}
+.searchInput {
+  border: none;
+  /* background-color: rgba(0, 0, 0, 0.133); */
+  padding: 8px;
+  border-radius: 5px;
+  width: 80% !important;
+  margin-left: 0px !important;
+}
+/* button for link click */
+.buttonLinkClick {
+  display: inline-block;
+  color: #438ffe;
+  border: none;
+  border-bottom: 1px solid currentColor;
+
+}
+.linkColor{
+  color: #438ffe;
+}
+/* multiRangeSlider */
+.container {
+  height: 4.6rem;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.pOHeader{
+  width: 17rem;
+  background: #fff;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+.slider {
+  position: relative;
+  width: 15rem;
+}
+
+.sliderTrack,
+.sliderRange,
+.sliderLeftValue,
+.sliderRightValue {
+  position: absolute;
+}
+
+.sliderTrack,
+.sliderRange {
+  border-radius: 3px;
+  height: 5px;
+}
+
+.sliderTrack {
+  background-color: #ced4da;
+  width: 100%;
+  z-index: 1;
+}
+
+.sliderRange {
+  background-color: #FF8057;
+  z-index: 2;
+}
+
+.sliderLeftValue,
+.sliderRightValue {
+  color: #000;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.sliderLeftValue {
+  left: 6px;
+}
+
+.sliderRightValue {
+  right: -4px;
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  outline: none;
+  width: 15rem;
+}
+
+.thumbZindex3 {
+  z-index: 3;
+}
+
+.thumbZindex4 {
+  z-index: 4;
+}
+
+.thumbZindex5 {
+  z-index: 5;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #FF8057;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}

@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.kmw-90 {
+  min-width: 90vw;
+}
+
+.top-btn button {
+  background-color: #fff;
+  border: none;
+  color: black;
+}
+
+.link {
+  display: inline-block;
+  color: #438ffe;
+  border: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.btn-primary {
+  background-color: #ff8057!important;
+  border: none !important;
+}
